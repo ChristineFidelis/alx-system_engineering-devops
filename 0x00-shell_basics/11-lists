@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -exec ls -ldn {} +; find ../ -maxdepth 1 -exec ls -ldn {} +; find /boot -maxdepth 1 -exec ls -ldn {} +
+ls -ldn $(find . -maxdepth 1 -type d) $(find ../ -maxdepth 1 -type d) $(find /boot -maxdepth 1 -type d)
